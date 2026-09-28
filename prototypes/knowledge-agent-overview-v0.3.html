@@ -1,0 +1,194 @@
+<div id="ka-product-v02" aria-label="资料治理 Agent 产品概念稿">
+  <div class="ka-shell">
+    <aside class="ka-nav">
+      <div class="ka-brand"><span class="ka-mark">K</span><div>资料治理 Agent<small>产品概念 · v0.3</small></div></div>
+      <div class="ka-project">示例项目 · A 产品资料</div>
+      <nav aria-label="产品导航" class="ka-menu"></nav>
+      <div class="ka-nav-foot">模拟资料 · 无真实连接<br>原始文件保持不变</div>
+    </aside>
+    <div class="ka-body">
+      <header class="ka-top"><span id="ka-crumb">工作台</span><span class="ka-demo">交互演示 · 非实际运行</span></header>
+      <main id="ka-view"></main>
+      <div id="ka-status" class="ka-status" aria-live="polite"></div>
+    </div>
+  </div>
+</div>
+<style>
+#ka-product-v02{--ka-bg:light-dark(#ffffff,#171c22);--ka-side:light-dark(#f5f6f7,#12171c);--ka-surface:light-dark(#f8f9fa,#20262d);--ka-text:light-dark(#192b34,#e3eaed);--ka-muted:light-dark(#596b76,#a6b5bf);--ka-line:light-dark(#dde4e8,#37434d);--ka-accent:light-dark(#16645f,#94d9cb);--ka-accent-text:light-dark(#ffffff,#102f2a);--ka-soft:light-dark(#eaf5f1,#203c36);--ka-warn:light-dark(#866012,#e5c477);--ka-warn-bg:light-dark(#fbf4e5,#392f1c);--ka-danger:light-dark(#a34141,#efa3a3);color:var(--ka-text);font-family:Inter,"Segoe UI","Microsoft YaHei",sans-serif;font-size:14px;line-height:1.65;color-scheme:light dark}
+#ka-product-v02 *{box-sizing:border-box}
+#ka-product-v02 .ka-shell{display:grid;grid-template-columns:176px minmax(0,1fr);background:var(--ka-bg);border:1px solid var(--ka-line);border-radius:16px;overflow:hidden}
+#ka-product-v02 .ka-nav{background:var(--ka-side);padding:24px 14px;min-width:0;border-right:1px solid var(--ka-line)}
+#ka-product-v02 .ka-brand{display:flex;align-items:center;gap:9px;font-weight:500;line-height:1.4}
+#ka-product-v02 .ka-mark{display:grid;place-items:center;background:var(--ka-accent);color:var(--ka-accent-text);border-radius:10px;width:30px;height:30px;flex-shrink:0;font-weight:500}
+#ka-product-v02 small{display:block;font-size:12px;color:var(--ka-muted);font-weight:400}
+#ka-product-v02 .ka-project{margin:26px 0 12px;font-size:12px;color:var(--ka-muted)}
+#ka-product-v02 .ka-menu{display:grid;gap:4px}
+#ka-product-v02 button{font:inherit;font-weight:500;line-height:1.45;color:var(--ka-text);background:var(--ka-bg);border:1px solid var(--ka-line);border-radius:8px;padding:9px 12px;max-width:100%;white-space:normal;text-align:center}
+#ka-product-v02 button:hover{background:var(--ka-surface)}
+#ka-product-v02 button:disabled{opacity:.5;cursor:not-allowed}
+#ka-product-v02 button.ka-primary{background:var(--ka-accent);color:var(--ka-accent-text);border-color:var(--ka-accent)}
+#ka-product-v02 button.ka-link{border:0;background:transparent;color:var(--ka-accent);padding:5px 0;text-align:left}
+#ka-product-v02 .ka-menu button{display:flex;align-items:center;gap:10px;text-align:left;background:transparent;border:0;font-weight:400}
+#ka-product-v02 .ka-menu button[aria-current="page"]{background:var(--ka-soft);color:var(--ka-accent);font-weight:500}
+#ka-product-v02 .ka-menu i,#ka-product-v02 .ka-menu svg{width:16px;height:16px;flex-shrink:0}
+#ka-product-v02 .ka-nav-foot{color:var(--ka-muted);font-size:12px;margin-top:32px}
+#ka-product-v02 .ka-body{min-width:0}
+#ka-product-v02 .ka-top{padding:14px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--ka-line);font-size:12px;color:var(--ka-muted)}
+#ka-product-v02 .ka-demo{color:var(--ka-accent)}
+#ka-product-v02 main{padding:26px}
+#ka-product-v02 h1{font-size:24px;line-height:1.35;font-weight:500;margin:0 0 8px}
+#ka-product-v02 h2{font-size:17px;line-height:1.4;font-weight:500;margin:0 0 12px}
+#ka-product-v02 h3{font-size:14px;line-height:1.5;font-weight:500;margin:0 0 8px}
+#ka-product-v02 p{margin:0 0 12px}
+#ka-product-v02 .ka-sub{color:var(--ka-muted);margin-bottom:24px}
+#ka-product-v02 .ka-card{background:var(--ka-bg);border:1px solid var(--ka-line);border-radius:12px;padding:18px;min-width:0;margin-bottom:16px}
+#ka-product-v02 .ka-feature{background:var(--ka-soft);border-color:transparent}
+#ka-product-v02 .ka-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+#ka-product-v02 .ka-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:14px}
+#ka-product-v02 .ka-tag{display:inline-block;font-size:12px;font-weight:400;border-radius:5px;padding:3px 7px;background:var(--ka-surface);color:var(--ka-muted);margin:0 5px 6px 0}
+#ka-product-v02 .ka-tag.ka-ok{color:var(--ka-accent);background:var(--ka-soft)}
+#ka-product-v02 .ka-tag.ka-warn{color:var(--ka-warn);background:var(--ka-warn-bg)}
+#ka-product-v02 .ka-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+#ka-product-v02 .ka-task-grid{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:18px;align-items:start}
+#ka-product-v02[data-evidence="inline"] .ka-task-grid{grid-template-columns:minmax(0,1fr)}
+#ka-product-v02 .ka-stage{display:flex;flex-wrap:wrap;gap:6px;margin:18px 0}
+#ka-product-v02 .ka-step{font-size:12px;padding:5px 8px;border-radius:6px;background:var(--ka-surface);color:var(--ka-muted)}
+#ka-product-v02 .ka-step.is-current{background:var(--ka-soft);color:var(--ka-accent)}
+#ka-product-v02 .ka-chat{padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--ka-line)}
+#ka-product-v02 .ka-chat-name{font-size:12px;color:var(--ka-accent);font-weight:500;margin-bottom:7px}
+#ka-product-v02 .ka-user{background:var(--ka-surface);border-radius:10px;padding:14px;margin-bottom:16px}
+#ka-product-v02 .ka-user .ka-chat-name{color:var(--ka-muted)}
+#ka-product-v02 .ka-evidence{padding:15px;background:var(--ka-surface);border-radius:10px;margin-bottom:12px}
+#ka-product-v02 .ka-evidence blockquote{border-left:2px solid var(--ka-line);padding-left:10px;margin:10px 0;font-size:13px}
+#ka-product-v02 .ka-muted{color:var(--ka-muted);font-size:12px}
+#ka-product-v02 label{display:block;margin-bottom:8px;font-weight:500}
+#ka-product-v02 textarea,#ka-product-v02 select{font:inherit;line-height:1.6;width:100%;border:1px solid var(--ka-line);border-radius:8px;padding:10px;color:var(--ka-text);background:var(--ka-bg)}
+#ka-product-v02 textarea{min-height:90px;resize:vertical}
+#ka-product-v02 .ka-kv{display:grid;grid-template-columns:80px minmax(0,1fr);gap:8px 14px;margin:12px 0}
+#ka-product-v02 .ka-kv dt{color:var(--ka-muted);font-size:12px}
+#ka-product-v02 .ka-kv dd{margin:0}
+#ka-product-v02 .ka-list-item{padding:13px 0;border-bottom:1px solid var(--ka-line);min-width:0}
+#ka-product-v02 .ka-list-item:last-child{border-bottom:0}
+#ka-product-v02 .ka-file{font-weight:500;overflow-wrap:anywhere}
+#ka-product-v02 .ka-caption{font-size:12px;color:var(--ka-muted);margin-top:8px}
+#ka-product-v02 .ka-status:empty{display:none}
+#ka-product-v02 .ka-status{margin:0 26px 20px;padding:10px 12px;background:var(--ka-soft);border-radius:8px}
+#ka-product-v02 .ka-error{color:var(--ka-danger);font-size:12px;margin-top:10px}
+#ka-product-v02 pre{margin:10px 0;background:var(--ka-surface);padding:14px;border-radius:8px;white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;line-height:1.7}
+#ka-product-v02 .ka-note{padding:12px;background:var(--ka-warn-bg);color:var(--ka-warn);border-radius:8px;font-size:12px;margin:12px 0}
+#ka-product-v02 .ka-diff-old{color:var(--ka-muted);text-decoration:line-through}
+#ka-product-v02 .ka-diff-new{background:var(--ka-soft);padding:7px 10px;border-radius:6px}
+#ka-product-v02[data-density="compact"] .ka-card{padding:13px;margin-bottom:12px}
+#ka-product-v02 [hidden]{display:none!important}
+@media(max-width:850px){#ka-product-v02 .ka-shell{grid-template-columns:minmax(0,1fr)}#ka-product-v02 .ka-nav{border-right:0;border-bottom:1px solid var(--ka-line);padding:16px}#ka-product-v02 .ka-project{margin:10px 0}#ka-product-v02 .ka-menu{display:flex;flex-wrap:wrap;gap:3px}#ka-product-v02 .ka-menu button{padding:8px 9px;font-size:12px}#ka-product-v02 .ka-nav-foot{display:none}#ka-product-v02 .ka-task-grid{grid-template-columns:minmax(0,1fr)}#ka-product-v02 .ka-top{padding:12px 18px}}
+@media(max-width:560px){#ka-product-v02 main{padding:18px}#ka-product-v02 .ka-two{grid-template-columns:minmax(0,1fr)}#ka-product-v02 h1{font-size:21px}#ka-product-v02 .ka-kv{grid-template-columns:70px minmax(0,1fr)}#ka-product-v02 .ka-status{margin:0 18px 16px}}
+@media(pointer:coarse){#ka-product-v02 button{min-height:44px}#ka-product-v02 textarea,#ka-product-v02 select{font-size:16px}}
+</style>
+<script>
+(()=>{
+  const root=document.getElementById('ka-product-v02');
+  const view=root.querySelector('#ka-view');
+  const nav=root.querySelector('.ka-menu');
+  const status=root.querySelector('#ka-status');
+  const menus=[['home','工作台','layout-dashboard'],['task','整理任务','messages-square'],['sources','资料来源','files'],['knowledge','有效知识','book-open-check'],['rules','处理规则','list-checks'],['releases','发布与版本','history'],['agents','Agent 接入','plug'],['settings','预算与权限','settings-2']];
+  const defaults={schema:3,page:'home',feedback:false,approved:false,repaired:false,published:false,second:false,secondPublished:false,opinion:'',query:'new',evidence:true};
+  let state={...defaults};
+  const design={entry:'工作台',evidence:'并列显示',density:'舒展'};
+  const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const button=(label,action,primary=false,disabled=false)=>`<button class="${primary?'ka-primary ':''}cursor-interaction" type="button" data-action="${action}" ${disabled?'disabled':''}>${label}</button>`;
+  const tag=(label,kind='')=>`<span class="ka-tag ${kind==='ok'?'ka-ok':kind==='warn'?'ka-warn':''}">${label}</span>`;
+  const header=(title,subtitle)=>`<h1>${title}</h1><p class="ka-sub">${subtitle}</p>`;
+  const price=()=>state.secondPublished?'15,800':'14,800';
+  function normalize(saved){
+    const next={...defaults};
+    if(saved?.schema!==3)return next;
+    if(menus.some(m=>m[0]===saved.page))next.page=saved.page;
+    for(const k of ['feedback','approved','repaired','published','second','secondPublished','evidence'])next[k]=saved[k]===true;
+    next.approved=next.approved&&next.feedback;next.repaired=next.repaired&&next.approved;next.published=next.published&&next.repaired;next.second=next.second&&next.published;next.secondPublished=next.secondPublished&&next.second;
+    next.opinion=typeof saved.opinion==='string'?saved.opinion.slice(0,600):'';
+    next.query=['new','old','channel'].includes(saved.query)?saved.query:'new';
+    return next;
+  }
+  const saved=window.openai?.widgetState?.privateContent;
+  state=normalize(saved);
+  function persist(){const p=window.openai?.setWidgetState?.({modelContent:{prototype:'资料治理 Agent v0.3 模拟',page:state.page,ruleApproved:state.approved,published:state.published,secondBatch:state.second,secondPublished:state.secondPublished},privateContent:{...state}});p?.catch?.(()=>{});}
+  function home(){
+    const pending=state.published?'交付周期仍需确认':'价格适用范围';
+    return header('让 AI 维护资料，你只做关键决定','A 产品项目 · 指定范围检查 · 原始资料不改动')+
+      `<section class="ka-card ka-feature"><div class="ka-row"><h2>需要你决定</h2>${tag(state.published?'价格知识已发布':'1 个问题组等待决定','warn')}</div><h3>${pending}</h3><p>${state.published?'价格已按客户类型发布；会议建议是否获批，仍需业务负责人确认。':'新版报价与历史合同不同。一次判断会影响 3 处资料；是全部替代，还是按客户类型分别适用？'}</p><div class="ka-actions">${button('继续对话','task',true)}${button('查看原文依据','evidence')}</div></section>`+
+      `<div class="ka-two"><section class="ka-card"><h2>AI 已完成的工作</h2><div class="ka-list-item">归并为 1 个业务判断，而非逐份文件审批${tag('有原文依据','ok')}</div><div class="ka-list-item">将历史合同与产品报价关联</div><div class="ka-list-item">识别会议建议不等于已批准制度</div><div class="ka-caption">示例任务状态，不代表实际处理能力</div></section><section class="ka-card"><h2>维护范围</h2><dl class="ka-kv"><dt>资料</dt><dd>${state.second?'7':'6'} 份模拟资料</dd><dt>读取</dt><dd>${state.second?'6':'5'} 份可读，1 份扫描件未检查</dd><dt>输出</dt><dd>派生知识，不覆盖原件</dd><dt>发布</dt><dd>${state.published?'价格范围已发布':'尚未发布'}</dd></dl><div class="ka-actions">${button('查看资料来源','sources')}${button('查看有效知识','knowledge')}</div></section></div>`;
+  }
+  function evidence(){return `<section class="ka-evidence"><h3>报价依据</h3><small>报价_v1.pdf · 已批准 · 历史版</small><blockquote>标准客户报价为 12,800 元。</blockquote><small>报价_v2.pdf · 已批准 · 当前生效</small><blockquote>标准客户报价调整为 14,800 元。</blockquote><small>客户B合同.docx · 合同有效</small><blockquote>客户 B 合同金额为 13,800 元。</blockquote><p class="ka-muted">文件时间较新不自动成为权威；合同、客户类型与生效时间共同决定适用性。</p></section><section class="ka-evidence"><h3>未完成事项</h3>${tag('交付周期待确认','warn')}<p class="ka-muted">会议纪要建议缩短周期，尚未找到批准依据。</p>${tag('扫描件未检查','warn')}<p class="ka-muted">首版示例不支持可靠解析此文件。</p></section>`;}
+  function ruleCard(){return `<section class="ka-card"><div class="ka-row"><h3>项目价格规则 · R-001</h3>${tag(state.approved?'已确认 · v1':'待确认草案',state.approved?'ok':'warn')}</div><p>新客户使用已批准且已生效的最新报价；老客户使用其有效合同。渠道客户缺少确认时，不输出统一价格。</p><dl class="ka-kv"><dt>范围</dt><dd>仅 A 产品项目</dd><dt>自动动作</dt><dd>允许生成可恢复的派生修订</dd><dt>不包含</dt><dd>自动发布、原件覆盖、跨项目推广</dd></dl><small>试运行：新客户 → 新报价；客户 B → 有效合同；渠道客户 → 请求澄清。</small></section>`;}
+  function task(){
+    const phase=state.published?5:state.repaired?4:state.approved?3:state.feedback?2:1;
+    let center=`<div class="ka-chat"><div class="ka-chat-name">资料治理 Agent</div><p>已对照报价和合同。我建议按客户类型处理价格差异，暂不认定新版报价替代全部合同。</p><p>价格差异是新旧替代，还是不同客户适用不同价格？</p>${button(state.evidence?'收起证据':'查看证据','toggleEvidence')}</div>`;
+    if(!state.feedback){center+=`<div class="ka-card"><label for="ka-opinion">提供业务判断</label><textarea id="ka-opinion" placeholder="新客户、老客户、渠道客户分别如何处理？">${esc(state.opinion)}</textarea><div class="ka-actions">${button('使用示例意见','example')}${button('提交示例意见','submitOpinion',true)}</div><div class="ka-caption">交互演示仅演示本项目的客户价格规则，不调用 AI。</div><div id="ka-opinion-error" class="ka-error" role="alert"></div></div>`;}
+    else{
+      center+=`<div class="ka-user"><div class="ka-chat-name">你</div>${esc(state.opinion)}</div><div class="ka-chat"><div class="ka-chat-name">资料治理 Agent</div><p>已将意见整理为项目价格规则。它只用于本项目，不授予自动发布权限；渠道价格保持待确认。</p></div>`+ruleCard();
+      if(!state.approved)center+=`<div class="ka-actions">${button('确认项目规则','approve',true)}${button('仅查看规则','rules')}</div>`;
+      else if(!state.repaired)center+=`<div class="ka-chat"><div class="ka-chat-name">规则已确认</div><p>将生成派生知识，保留报价与合同原件。此次执行不包括交付周期修订。</p><div class="ka-actions">${button('模拟生成并验证修订','repair',true)}</div></div>`;
+      else if(!state.published)center+=`<div class="ka-card ka-feature"><h3>派生修订已验证</h3><p>新客户采用 14,800 元报价；客户 B 保留合同价；渠道客户返回澄清要求。</p><small>交付周期和扫描件未解决，不进入此次发布。</small><div class="ka-actions">${button('检查并发布价格知识','releases',true)}${button('查看修复结果','knowledge')}</div></div>`;
+      else center+=`<div class="ka-card ka-feature"><h3>价格知识已发布</h3><p>项目规则与价格知识已关联。原件保持不变，交付周期继续待确认。</p><div class="ka-actions">${button('试读有效知识','knowledge',true)}${button(state.second?'查看第二批维护':'模拟加入第二批报价',state.second?'releases':'second')}</div></div>`;
+    }
+    return header('整理任务：维护价格口径','范围：报价、合同及产品资料 · 只修复派生版本')+`<div class="ka-stage">${['读取与诊断','业务澄清','确认规则','修复验证','待发布','已发布'].map((s,i)=>`<span class="ka-step ${i===phase?'is-current':''}">${s}</span>`).join('')}</div><div class="ka-task-grid"><section>${center}</section><aside ${!state.evidence?'hidden':''} aria-label="证据与未完成事项">${evidence()}</aside></div>`;
+  }
+  function sources(){
+    const files=[['产品说明.docx','已读取','业务范围依据'],['报价_v1.pdf','历史版本','未删除，保留价格历史'],['报价_v2.pdf','已批准、已生效','新客户价格依据'],['客户B合同.docx','合同有效','客户 B 专属价格依据'],['会议纪要.md','部分内容待确认','交付周期建议未找到批准依据'],['扫描附件.pdf','未检查','无法可靠解析，不计入完成范围']];
+    if(state.second)files.push(['报价_v3.pdf','新版本已读取','已批准、已生效；生成增量修订，等待发布或已发布']);
+    return header('资料来源','模拟上传来源 · 文件仍保留原始版本')+`<section class="ka-card">${files.map((f,i)=>`<div class="ka-list-item"><div class="ka-row"><span class="ka-file">${f[0]}</span>${tag(f[1],i===5?'warn':'')}</div><small>${f[2]}</small></div>`).join('')}</section><div class="ka-actions">${button('回到整理任务','task',true)}${state.published?button(state.second?'查看新版本提案':'模拟加入已批准的 v3 报价',state.second?'releases':'second'):''}</div>`;
+  }
+  function knowledge(){
+    if(!state.repaired)return header('有效知识','尚未生成修复版本')+`<section class="ka-card"><h2>先完成业务澄清</h2><p>价格差异还没有形成经确认的处理规则。原始资料不会因为上传就成为有效知识。</p>${button('继续整理任务','task',true)}</section>`;
+    const answers={new:`新客户报价 ${price()} 元。仅限 A 产品项目，来源为${state.secondPublished?'报价_v3.pdf':'报价_v2.pdf'}；该报价已批准且已生效。`,old:'需要指定客户和有效合同。示例客户 B 的有效合同金额为 13,800 元，不用标准报价覆盖。',channel:'需要业务确认：当前没有足够依据发布渠道客户统一价格。'};
+    return header('有效知识','按适用条件提供依据，而不是选择最新文本')+`<section class="ka-card"><div class="ka-row"><h2>价格知识视图</h2>${tag(state.published?(state.secondPublished?'已发布 · P-002':'已发布 · P-001'):'草稿 · 不对外使用',state.published?'ok':'warn')}</div><dl class="ka-kv"><dt>新客户</dt><dd>${price()} 元 · 当前生效的已批准报价</dd><dt>老客户</dt><dd>以对应有效合同为准</dd><dt>渠道客户</dt><dd>缺少确认时请求澄清</dd><dt>范围</dt><dd>仅 A 产品项目</dd></dl></section><section class="ka-card"><h2>试读适用条件</h2><label for="ka-query">客户类型</label><select id="ka-query">${[['new','新客户'],['old','老客户'],['channel','渠道客户']].map(([v,t])=>`<option value="${v}" ${state.query===v?'selected':''}>${t}</option>`).join('')}</select><div class="ka-evidence" style="margin-top:14px" aria-live="polite">${esc(answers[state.query])}</div><small>${state.published?'模拟服务返回内容；未连接真实 Agent。':'当前仅为发布前试读，外部 Agent 无法读取此草稿。'}</small></section><div class="ka-actions">${button('查看来源','sources')}${button(state.published?'查看发布记录':'检查发布提案','releases',true)}</div>`;
+  }
+  function rules(){return header('处理规则','对话中的意见，经明确范围后才能成为长期规则')+(state.feedback?ruleCard():`<section class="ka-card"><h2>还没有价格规则</h2><p>AI 正在等待客户类型的业务判断，不会自行把“最新文件优先”注册为规则。</p>${button('提供业务意见','task',true)}</section>`)+`<section class="ka-card"><h2>规则与发布分开</h2><div class="ka-list-item">规则确认：允许在本项目生成派生修订。</div><div class="ka-list-item">知识发布：本次新增内容需要单独批准。</div><div class="ka-list-item">原件覆盖：未获得授权，不执行。</div></section>`+(state.feedback&&!state.approved?`<div class="ka-actions">${button('确认项目规则','approve',true)}</div>`:'');}
+  function releases(){
+    if(!state.repaired)return header('发布与版本','没有可发布的修订集')+`<section class="ka-card"><h2>尚未完成修复验证</h2><p>规则提案、修复结果与发布版本是不同状态。</p>${button('继续整理','task',true)}</section>`;
+    let html=header('发布与版本','只发布已经确认和验证的内容，保留未解决事项')+`<section class="ka-card"><div class="ka-row"><h2>P-001 · 价格修订</h2>${tag(state.published?'本服务已生效':'等待发布',state.published?'ok':'warn')}</div><div class="ka-diff-old">全部客户统一采用最新标准报价</div><div class="ka-diff-new">新客户采用 14,800 元；老客户按有效合同；渠道客户先澄清。</div><dl class="ka-kv"><dt>原件</dt><dd>不覆盖、不删除</dd><dt>规则依据</dt><dd>R-001 · v1，仅本项目</dd><dt>验证案例</dt><dd>新客户／客户 B／渠道客户</dd><dt>下游状态</dt><dd>尚无真实连接，未验证同步</dd></dl><div class="ka-note">交付周期仍待确认；扫描件未检查。二者不纳入本次价格发布。</div>${!state.published?button('确认发布价格知识','publish',true):button('试读当前发布','knowledge')}</section>`;
+    if(state.second)html+=`<section class="ka-card"><div class="ka-row"><h2>P-002 · 第二批资料</h2>${tag(state.secondPublished?'本服务已生效':'增量提案 · 待发布',state.secondPublished?'ok':'warn')}</div><p>报价_v3.pdf 已批准且已生效，新客户价格为 15,800 元。沿用项目规则 R-001，保留有效合同与渠道例外。</p><small>只处理变化和关联价格知识；复用规则不等于自动批准新发布。</small><div class="ka-actions">${!state.secondPublished?button('确认发布第二批价格','publishSecond',true):button('查看新版本知识','knowledge',true)}</div></section>`;
+    else if(state.published)html+=`<div class="ka-actions">${button('模拟加入第二批已批准报价','second',true)}</div>`;
+    return html;
+  }
+  function agents(){return header('Agent 接入','统一能力接口 · 不要求客户更换自己的 Agent')+`<section class="ka-card"><div class="ka-row"><h2>外部 Agent 示例</h2>${tag('未连接真实服务')}</div><dl class="ka-kv"><dt>可调用</dt><dd>提交整理任务、查询状态、读取已发布知识</dd><dt>需另授权</dt><dd>确认规则、执行修订、发布和写回</dd><dt>上下文</dt><dd>客户身份、项目、客户类型、业务日期</dd></dl><small>API／MCP 使用同一套治理状态；以下为目标响应示意，不是正式接口契约。</small></section><section class="ka-card"><h2>读取有效知识 · 示例响应</h2><pre>${esc(JSON.stringify(state.published?{status:'available',project:'A产品',release:state.secondPublished?'P-002':'P-001',content:`新客户报价 ${price()} 元`,applies_to:'新客户',source:state.secondPublished?'报价_v3.pdf':'报价_v2.pdf',unresolved:['渠道价格需确认','交付周期未解决'],sync:'未连接真实下游'}:{status:'not_published',project:'A产品',next_action:'完成修订并确认发布'},null,2))}</pre></section><div class="ka-two"><section class="ka-card"><h3>委托能力</h3><p>提交任务 → 获取澄清事项 → 提供意见 → 取得修复成果</p>${button('查看任务流程','task')}</section><section class="ka-card"><h3>知识能力</h3><p>读取有效内容 → 获取版本变化 → 更新下游副本</p>${button('查看当前知识','knowledge')}</section></div>`;}
+  function settings(){return header('预算与权限','先明确工作边界，再委托 AI')+`<section class="ka-card"><h2>本次授权</h2><dl class="ka-kv"><dt>读取范围</dt><dd>A 产品项目中的指定资料</dd><dt>处理方式</dt><dd>派生修订；不修改原件</dd><dt>规则范围</dt><dd>项目级；不自动推广</dd><dt>发布</dt><dd>由项目所有者逐次确认</dd><dt>原件删除</dt><dd>未授权</dd></dl></section><div class="ka-two"><section class="ka-card"><h2>任务预算</h2><div class="ka-list-item">首次整理：读取、解析与语义核对</div><div class="ka-list-item">持续维护：变化内容与关联影响</div><div class="ka-list-item">Agent 读取：复用已发布结果</div><small>实际额度、Token 用量和金额需真实任务测量，本概念稿不模拟节省比例。</small></section><section class="ka-card"><h2>预算耗尽时</h2><p>保存已完成工作，说明未检查范围；由用户选择继续、缩小范围或延期。</p><small>不会以“预算用完”把未处理资料标记为已检查。</small></section></div>`;}
+  function render(){
+    root.dataset.evidence=design.evidence==='并列显示'&&state.evidence?'side':'inline';root.dataset.density=design.density==='紧凑'?'compact':'normal';
+    nav.innerHTML=menus.map(([key,label,icon])=>`<button type="button" class="cursor-interaction" data-page="${key}" ${state.page===key?'aria-current="page"':''}><i data-lucide="${icon}" aria-hidden="true"></i>${label}</button>`).join('');
+    root.querySelector('#ka-crumb').textContent=menus.find(m=>m[0]===state.page)?.[1]||'工作台';
+    const pages={home,task,sources,knowledge,rules,releases,agents,settings};view.innerHTML=pages[state.page]();
+    if(globalThis.lucide)lucide.createIcons({attrs:{width:16,height:16}});
+  }
+  const notice=message=>{status.textContent=message;};
+  function action(name){
+    if(menus.some(m=>m[0]===name)){state.page=name;notice('');}
+    else if(name==='evidence'){state.page='task';state.evidence=true;notice('已展开本任务的原文证据。');}
+    else if(name==='toggleEvidence'){state.evidence=!state.evidence;notice(state.evidence?'已展开证据。':'原文证据已收起。');}
+    else if(name==='example'){const box=root.querySelector('#ka-opinion');box.value='新客户按已批准且已生效的最新报价，老客户按有效合同；仅限本项目，渠道客户另行确认。';state.opinion=box.value;notice('示例意见已填入，提交后可查看规则草案。');persist();return;}
+    else if(name==='submitOpinion'){
+      const value=root.querySelector('#ka-opinion')?.value.trim()||'';const error=root.querySelector('#ka-opinion-error');
+      if(!value.includes('新客户')||!value.includes('老客户')||!value.includes('合同')||!value.includes('渠道')||/所有项目|全部项目|跨项目/.test(value)||!/(仅限|只用于|只适用).*项目/.test(value)){error.textContent='本概念演示仅支持上方示例规则，请使用“使用示例意见”。未对你的输入进行真实 AI 分析。';return;}
+      state.opinion=value.slice(0,600);state.feedback=true;notice('模拟整理成项目规则草案，尚未生效。');
+    }
+    else if(name==='approve'&&state.feedback){state.approved=true;state.repaired=true;notice('规则确认后，AI 模拟自动执行并验证派生修订；知识发布仍需单独确认。');}
+    else if(name==='repair'&&state.approved){state.repaired=true;notice('模拟派生修订与案例验证完成；尚未发布。');}
+    else if(name==='publish'&&state.repaired){state.published=true;notice('模拟发布 P-001。未解决事项仍保留，未连接任何真实下游。');}
+    else if(name==='second'&&state.published){state.second=true;state.page='releases';notice('模拟新报价进入：复用规则生成增量提案，等待单独发布。');}
+    else if(name==='publishSecond'&&state.second){state.secondPublished=true;notice('模拟发布 P-002。老客户与渠道处理条件不变。');}
+    render();persist();
+  }
+  root.addEventListener('click',event=>{const el=event.target.closest('button');if(!el||!root.contains(el)||el.disabled)return;if(el.dataset.page)action(el.dataset.page);else if(el.dataset.action)action(el.dataset.action);});
+  root.addEventListener('change',event=>{if(event.target.id==='ka-query'){state.query=event.target.value;render();persist();}});
+  root.addEventListener('input',event=>{if(event.target.id==='ka-opinion')state.opinion=event.target.value.slice(0,600);});
+  window.addEventListener('openai:set_globals',event=>{const value=event.detail?.globals?.widgetState?.privateContent;if(value){state=normalize(value);render();}});
+  render();
+  if(globalThis.Tweak){
+    let entry=design.entry,evidenceMode=design.evidence;
+    const tweak=new Tweak({container:root,onChange:()=>{if(entry!==design.entry){entry=design.entry;state.page=entry==='任务对话'?'task':'home';}if(evidenceMode!==design.evidence){evidenceMode=design.evidence;state.evidence=evidenceMode==='并列显示';}render();persist();}});
+    tweak.addSelect(design,'entry',{label:'默认进入',options:['工作台','任务对话']});
+    tweak.addSelect(design,'evidence',{label:'证据展示',options:['并列显示','按需展开']});
+    tweak.addSelect(design,'density',{label:'内容密度',options:['舒展','紧凑']});
+  }
+})();
+</script>
