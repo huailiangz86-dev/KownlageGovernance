@@ -1,0 +1,113 @@
+{
+  "chapters": 31,
+  "source_characters": 39939,
+  "tables": 14,
+  "figures": 4,
+  "pages": 48,
+  "rendered_pages": 48,
+  "missing_local_links": [],
+  "page_text_lengths": [
+    487,
+    1055,
+    553,
+    840,
+    915,
+    882,
+    878,
+    875,
+    813,
+    553,
+    828,
+    1062,
+    800,
+    1006,
+    995,
+    876,
+    869,
+    792,
+    811,
+    732,
+    953,
+    464,
+    1024,
+    822,
+    982,
+    980,
+    715,
+    888,
+    897,
+    763,
+    904,
+    789,
+    828,
+    876,
+    445,
+    857,
+    1077,
+    1022,
+    977,
+    1084,
+    902,
+    1053,
+    949,
+    857,
+    860,
+    712,
+    953,
+    570
+  ],
+  "visual_review": "passed",
+  "image_generation": {
+    "mode": "built-in image_gen",
+    "assets": [
+      {
+        "file": "knowledge-engine-architecture-model-v33.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "d39f352c15ab77c3403a9b8528a88333083fdccf0466680034efbc7d67553710"
+      },
+      {
+        "file": "knowledge-structure-build-model-v33.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "721a9debc0f2043ff3ff09b6ecc574e649de536820d26725bce507cee0f013b2"
+      },
+      {
+        "file": "governance-rule-lifecycle-model-v33.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "c9c8da017ea162211376acddff0b23a996ba8784cadec6852e8e7eae10761c95"
+      },
+      {
+        "file": "knowledge-version-lifecycle-model-v34.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "989e690b248dd269a3e439d0aa0005729fbc33717d1776d93fb89340e327cdf3"
+      }
+    ]
+  },
+  "lifecycle_sections": 16,
+  "example_90_day_interval": "passed",
+  "visual_review_scope": "All 48 pages reviewed in four contact sheets; lifecycle diagram page 35 reviewed full size; generated image labels reviewed in original output.",
+  "deliverables": [
+    {
+      "file": "D:\\开发的项目\\KowledgeManager\\docs\\deliverables\\可复用知识体系与统一知识引擎产品方案-v3.4.pdf",
+      "bytes": 2610917,
+      "sha256": "ebd660a314bc4932bc8603cfca63fcce8eeeb2a13c29908025974db12e9c703e"
+    },
+    {
+      "file": "D:\\开发的项目\\KowledgeManager\\docs\\deliverables\\可复用知识体系与统一知识引擎产品方案-v3.4.docx",
+      "bytes": 5444343,
+      "sha256": "11bbacd8fbd138fb73d69c73cb84c704198d1e4288789d5e895ffd1ae318ec8d"
+    }
+  ],
+  "new_image_matches_original": true
+}

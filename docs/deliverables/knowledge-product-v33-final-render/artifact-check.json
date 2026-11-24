@@ -1,0 +1,94 @@
+{
+  "chapters": 31,
+  "source_characters": 32689,
+  "tables": 12,
+  "figures": 3,
+  "pages": 40,
+  "rendered_pages": 40,
+  "missing_local_links": [],
+  "page_text_lengths": [
+    473,
+    961,
+    554,
+    840,
+    915,
+    882,
+    878,
+    875,
+    813,
+    553,
+    828,
+    1062,
+    800,
+    1006,
+    995,
+    876,
+    869,
+    792,
+    811,
+    732,
+    953,
+    464,
+    1024,
+    822,
+    982,
+    980,
+    715,
+    888,
+    897,
+    763,
+    904,
+    789,
+    828,
+    877,
+    956,
+    836,
+    872,
+    784,
+    766,
+    941
+  ],
+  "visual_review": "passed",
+  "image_generation": {
+    "mode": "built-in image_gen",
+    "assets": [
+      {
+        "file": "knowledge-engine-architecture-model-v33.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "d39f352c15ab77c3403a9b8528a88333083fdccf0466680034efbc7d67553710"
+      },
+      {
+        "file": "knowledge-structure-build-model-v33.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "721a9debc0f2043ff3ff09b6ecc574e649de536820d26725bce507cee0f013b2"
+      },
+      {
+        "file": "governance-rule-lifecycle-model-v33.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "sha256": "c9c8da017ea162211376acddff0b23a996ba8784cadec6852e8e7eae10761c95"
+      }
+    ]
+  },
+  "visual_review_scope": "All 40 pages reviewed in four contact sheets; pages 10 and 22 reviewed full size; original model output labels reviewed. Rule diagram placement revised to remove unnecessary page gap.",
+  "deliverables": [
+    {
+      "file": "D:\\开发的项目\\KowledgeManager\\docs\\deliverables\\可复用知识体系与统一知识引擎产品方案-v3.3.pdf",
+      "bytes": 2211335,
+      "sha256": "b6fc891d40ae9418c47aa77298d8104f80853d31f0df463ab8c9ef510d862c37"
+    },
+    {
+      "file": "D:\\开发的项目\\KowledgeManager\\docs\\deliverables\\可复用知识体系与统一知识引擎产品方案-v3.3.docx",
+      "bytes": 4143115,
+      "sha256": "9d76ac273f4bd8726b4a95dad4f02cad8ce20023d9dc5058dc5f3c84cd48f3fa"
+    }
+  ]
+}

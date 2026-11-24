@@ -1,0 +1,49 @@
+{
+  "chapters": 26,
+  "official_sources": 22,
+  "source_characters": 20053,
+  "missing_local_links": [],
+  "pdf_pages": 25,
+  "rendered_pages": 25,
+  "tables": 7,
+  "figures": 2,
+  "page_text_lengths": [
+    494,
+    1004,
+    902,
+    931,
+    389,
+    126,
+    382,
+    901,
+    926,
+    732,
+    1047,
+    1060,
+    997,
+    966,
+    877,
+    919,
+    823,
+    802,
+    937,
+    1046,
+    794,
+    848,
+    787,
+    711,
+    300
+  ],
+  "visual_review": "passed_all_25_page_layouts_and_full_resolution_cover_comparison_code",
+  "review_details": [
+    "All final pages inspected in contact sheets",
+    "Cover has no title border",
+    "Comparison table padding and repeated headers verified",
+    "JSON and YAML examples remain within individual pages",
+    "No observed overlaps or cropped text"
+  ],
+  "deliverable_sha256": {
+    "知识库引擎产品与技术完整方案-v2.0.docx": "2661f08f7043b0d837f7263b405c7a49268ec2bcafd1006974b19dd20b92df99",
+    "知识库引擎产品与技术完整方案-v2.0.pdf": "4db96c1f022d97bee89d18facbfdb7f6c4e6cc967b525c6b2944ac345074cc08"
+  }
+}

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1390" viewBox="0 0 1900 1390" role="img" aria-labelledby="title description">
+<title id="title">多模态知识库产品完整结构图</title>
+<desc id="description">目标设计。从资料接入、多模态解析、知识引擎和产品服务，到知识门户、问答与GEO应用。底层资源支撑各层，权限与质量贯穿全过程。</desc>
+<rect width="100%" height="100%" fill="white"/>
+<text x="80" y="42" font-family="Microsoft YaHei, sans-serif" font-size="44" font-weight="700" fill="#243247" dominant-baseline="text-before-edge">多模态知识库 · 完整产品结构</text>
+<text x="80" y="106" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">目标设计  |  资料进入 → 知识形成 → 授权使用 → 持续更新</text>
+<rect x="80" y="172" width="1410" height="120" rx="12" fill="#eaf1ff" stroke="none"/>
+<rect x="80" y="188" width="5" height="88" rx="2" fill="#3568c0" stroke="none"/>
+<text x="105" y="189" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#3568c0" dominant-baseline="text-before-edge">L6  上层应用</text>
+<text x="105" y="245" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">知识门户 · 阅读与搜索</text>
+<text x="565" y="245" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">知识问答 · 研究与写作</text>
+<text x="1025" y="245" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">GEO · 企业 Agent · 业务系统</text>
+<rect x="80" y="322" width="1410" height="120" rx="12" fill="#eaf6f4" stroke="none"/>
+<rect x="80" y="338" width="5" height="88" rx="2" fill="#237b70" stroke="none"/>
+<text x="105" y="339" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#237b70" dominant-baseline="text-before-edge">L5  产品与知识服务</text>
+<text x="105" y="395" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">知识库与目录 · 内容协作</text>
+<text x="565" y="395" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">治理规则 · 审核与发布</text>
+<text x="1025" y="395" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">搜索 · 问答 · 开放 API</text>
+<polyline points="785,317 785,297" fill="none" stroke="#9ba8ba" stroke-width="3"/>
+<polygon points="785,297 779,306 791,306" fill="#9ba8ba"/>
+<rect x="80" y="472" width="1410" height="120" rx="12" fill="#f0edfc" stroke="none"/>
+<rect x="80" y="488" width="5" height="88" rx="2" fill="#7560af" stroke="none"/>
+<text x="105" y="489" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#7560af" dominant-baseline="text-before-edge">L4  知识库核心引擎</text>
+<text x="105" y="545" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">知识表示 · 证据与切片</text>
+<text x="565" y="545" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">索引构建 · 混合召回</text>
+<text x="1025" y="545" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">版本复核 · 重排与上下文</text>
+<polyline points="785,467 785,447" fill="none" stroke="#9ba8ba" stroke-width="3"/>
+<polygon points="785,447 779,456 791,456" fill="#9ba8ba"/>
+<rect x="80" y="622" width="1410" height="120" rx="12" fill="#fff3e7" stroke="none"/>
+<rect x="80" y="638" width="5" height="88" rx="2" fill="#aa6826" stroke="none"/>
+<text x="105" y="639" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#aa6826" dominant-baseline="text-before-edge">L3  多模态解析与理解</text>
+<text x="105" y="695" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">文档结构 · OCR · 表格</text>
+<text x="565" y="695" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">语音转写 · 说话人</text>
+<text x="1025" y="695" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">视频镜头 · 帧图 · 时间轴</text>
+<polyline points="785,617 785,597" fill="none" stroke="#9ba8ba" stroke-width="3"/>
+<polygon points="785,597 779,606 791,606" fill="#9ba8ba"/>
+<rect x="80" y="772" width="1410" height="120" rx="12" fill="#edf5fb" stroke="none"/>
+<rect x="80" y="788" width="5" height="88" rx="2" fill="#337b9e" stroke="none"/>
+<text x="105" y="789" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#337b9e" dominant-baseline="text-before-edge">L2  资料接入与同步</text>
+<text x="105" y="845" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">上传 · 连接器 · 范围授权</text>
+<text x="565" y="845" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">来源身份 · 文件版本 · 摘要</text>
+<text x="1025" y="845" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">增量同步 · 变更与失效</text>
+<polyline points="785,767 785,747" fill="none" stroke="#9ba8ba" stroke-width="3"/>
+<polygon points="785,747 779,756 791,756" fill="#9ba8ba"/>
+<rect x="80" y="922" width="1410" height="120" rx="12" fill="#f2f4f7" stroke="none"/>
+<rect x="80" y="938" width="5" height="88" rx="2" fill="#5f6b7b" stroke="none"/>
+<text x="105" y="939" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#5f6b7b" dominant-baseline="text-before-edge">资料来源</text>
+<text x="105" y="995" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">文件 · 文件夹 · 云存储</text>
+<text x="565" y="995" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">文档 · 图片 · 音频 · 视频</text>
+<text x="1025" y="995" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#243247" dominant-baseline="text-before-edge">内容系统 · 业务数据 · 人工编写</text>
+<polyline points="785,917 785,897" fill="none" stroke="#9ba8ba" stroke-width="3"/>
+<polygon points="785,897 779,906 791,906" fill="#9ba8ba"/>
+<rect x="1530" y="172" width="290" height="870" rx="12" fill="#f5f7fa" stroke="#dbe2ea"/>
+<text x="1554" y="194" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#243247" dominant-baseline="text-before-edge">贯穿全部层次</text>
+<text x="1554" y="284" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#243247" dominant-baseline="text-before-edge">身份与权限</text>
+<text x="1554" y="329" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">团队 / 知识库 / 目录</text>
+<text x="1554" y="364" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">人员职责 / 调用方 / 用途</text>
+<text x="1554" y="457" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#243247" dominant-baseline="text-before-edge">版本与有效性</text>
+<text x="1554" y="502" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">来源 / 知识 / 发布版本</text>
+<text x="1554" y="537" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">变更 / 替代 / 撤回</text>
+<text x="1554" y="630" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#243247" dominant-baseline="text-before-edge">执行与追溯</text>
+<text x="1554" y="675" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">任务恢复 / 幂等 / 审计</text>
+<text x="1554" y="710" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">证据 / 配置 / 处理回执</text>
+<text x="1554" y="803" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#243247" dominant-baseline="text-before-edge">质量与运行</text>
+<text x="1554" y="848" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">评估集 / 反馈 / 回归</text>
+<text x="1554" y="883" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">覆盖 / 延迟 / 失败 / 告警</text>
+<text x="1554" y="980" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="700" fill="#237b70" dominant-baseline="text-before-edge">治理承担质量控制</text>
+<rect x="80" y="1102" width="1740" height="164" rx="12" fill="#253650" stroke="none"/>
+<text x="105" y="1120" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#ffffff" dominant-baseline="text-before-edge">L1  基础资源与执行底座</text>
+<text x="105" y="1177" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#ffffff" dominant-baseline="text-before-edge">MySQL · 私有对象存储</text>
+<text x="105" y="1220" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#d2dcec" dominant-baseline="text-before-edge">事实 / 关系 / 原件 / 产物</text>
+<text x="535" y="1177" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#ffffff" dominant-baseline="text-before-edge">搜索与向量后端</text>
+<text x="535" y="1220" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#d2dcec" dominant-baseline="text-before-edge">关键词 / 语义 / 多模态</text>
+<text x="965" y="1177" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#ffffff" dominant-baseline="text-before-edge">任务队列 · Worker</text>
+<text x="965" y="1220" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#d2dcec" dominant-baseline="text-before-edge">调度 / 检查点 / 恢复</text>
+<text x="1395" y="1177" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#ffffff" dominant-baseline="text-before-edge">模型与处理引擎适配</text>
+<text x="1395" y="1220" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#d2dcec" dominant-baseline="text-before-edge">阿里云 / 火山 / RAGFlow</text>
+<text x="80" y="1293" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">实线箭头：内容走向应用的主要路径；基础资源支撑各层，横向控制贯穿全过程。</text>
+<text x="80" y="1333" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="400" fill="#58677a" dominant-baseline="text-before-edge">逻辑分层不等于微服务拆分；本图为产品目标结构，具体实现与验收状态见配套说明。</text>
+</svg>

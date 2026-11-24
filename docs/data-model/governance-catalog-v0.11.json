@@ -1,0 +1,751 @@
+{
+  "version": "0.11",
+  "status": "design_only_not_migrated",
+  "client_date": "2026-10-13",
+  "display_timezone": "Asia/Shanghai",
+  "storage_timezone": "UTC",
+  "scope": "organization_and_project",
+  "entities": {
+    "KnowledgeType": {
+      "id": {
+        "type": "id",
+        "nullable": false
+      },
+      "parent_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "KnowledgeType"
+      },
+      "name": {
+        "type": "string",
+        "nullable": false
+      },
+      "status": {
+        "type": "enum",
+        "nullable": false,
+        "values": [
+          "active",
+          "retired"
+        ]
+      }
+    },
+    "CatalogAsset": {
+      "organization_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Organization"
+      },
+      "project_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Project"
+      },
+      "id": {
+        "type": "id",
+        "nullable": false
+      },
+      "title": {
+        "type": "string",
+        "nullable": false
+      },
+      "owner_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "knowledge_type_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "KnowledgeType"
+      },
+      "classification_status": {
+        "type": "enum",
+        "nullable": false,
+        "values": [
+          "unclassified",
+          "suggested",
+          "confirmed"
+        ]
+      },
+      "source_kind": {
+        "type": "enum",
+        "nullable": false,
+        "values": [
+          "local_upload",
+          "knowledge_import",
+          "agent_delivery"
+        ]
+      },
+      "created_at": {
+        "type": "datetime_utc",
+        "nullable": false
+      },
+      "updated_at": {
+        "type": "datetime_utc",
+        "nullable": false
+      }
+    },
+    "AssetLocation": {
+      "organization_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Organization"
+      },
+      "project_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Project"
+      },
+      "id": {
+        "type": "id",
+        "nullable": false
+      },
+      "asset_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "CatalogAsset"
+      },
+      "source_version_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "LocalSourceVersion"
+      },
+      "source_system_id": {
+        "type": "id",
+        "nullable": true
+      },
+      "path": {
+        "type": "string",
+        "nullable": false,
+        "maxLength": 512
+      },
+      "object_version": {
+        "type": "string",
+        "nullable": true
+      },
+      "etag": {
+        "type": "string",
+        "nullable": true
+      },
+      "imported_by": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "imported_at": {
+        "type": "datetime_utc",
+        "nullable": false
+      },
+      "source_modified_at": {
+        "type": "datetime_utc",
+        "nullable": true
+      }
+    },
+    "LocalSourceVersion": {
+      "id": {
+        "type": "id",
+        "nullable": false
+      },
+      "filename": {
+        "type": "string",
+        "nullable": false
+      },
+      "file_format": {
+        "type": "enum",
+        "nullable": false,
+        "values": [
+          "txt",
+          "md",
+          "pdf",
+          "docx",
+          "xlsx",
+          "other"
+        ]
+      },
+      "sha256": {
+        "type": "string",
+        "nullable": false,
+        "immutable": true
+      },
+      "original_bytes": {
+        "type": "bytes",
+        "nullable": false,
+        "immutable": true
+      },
+      "parse_status": {
+        "type": "enum",
+        "nullable": false,
+        "values": [
+          "complete",
+          "partial",
+          "no_text"
+        ]
+      },
+      "created_by": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Principal"
+      },
+      "created_at": {
+        "type": "datetime_utc",
+        "nullable": false,
+        "immutable": true
+      }
+    },
+    "KnowledgeVersionMetadata": {
+      "knowledge_version_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "GeneralKnowledgeVersion"
+      },
+      "owner_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal",
+        "immutable": true
+      },
+      "knowledge_type_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "KnowledgeType",
+        "immutable": true
+      },
+      "logical_directory_id": {
+        "type": "id",
+        "nullable": true,
+        "immutable": true
+      },
+      "source_location_ids": {
+        "type": "array<id>",
+        "nullable": false,
+        "immutable": true
+      },
+      "created_by": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Principal",
+        "immutable": true
+      },
+      "created_at": {
+        "type": "datetime_utc",
+        "nullable": false,
+        "immutable": true
+      },
+      "valid_from": {
+        "type": "datetime_utc",
+        "nullable": true,
+        "immutable": true
+      },
+      "valid_to": {
+        "type": "datetime_utc",
+        "nullable": true,
+        "immutable": true
+      },
+      "applicability": {
+        "type": "object",
+        "nullable": false,
+        "immutable": true
+      }
+    },
+    "TaskMetadata": {
+      "organization_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Organization"
+      },
+      "project_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Project"
+      },
+      "task_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "DirectoryTask"
+      },
+      "assignee_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "reviewer_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "publisher_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "created_by": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Principal"
+      },
+      "created_at": {
+        "type": "datetime_utc",
+        "nullable": false
+      },
+      "updated_at": {
+        "type": "datetime_utc",
+        "nullable": false
+      },
+      "started_at": {
+        "type": "datetime_utc",
+        "nullable": true
+      },
+      "completed_at": {
+        "type": "datetime_utc",
+        "nullable": true
+      },
+      "due_at": {
+        "type": "datetime_utc",
+        "nullable": true
+      },
+      "status": {
+        "type": "enum",
+        "nullable": false,
+        "values": [
+          "ready",
+          "processing",
+          "paused",
+          "blocked",
+          "review",
+          "published",
+          "withdrawn"
+        ]
+      },
+      "manifest_id": {
+        "type": "id",
+        "nullable": false,
+        "immutable": true
+      },
+      "knowledge_type_ids": {
+        "type": "array<id>",
+        "nullable": false,
+        "immutable": true
+      },
+      "rule_version_ids": {
+        "type": "array<id>",
+        "nullable": false,
+        "immutable": true
+      }
+    },
+    "TaskProblem": {
+      "id": {
+        "type": "id",
+        "nullable": false
+      },
+      "task_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "DirectoryTask"
+      },
+      "assignee_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "problem_kind": {
+        "type": "enum",
+        "nullable": false,
+        "values": [
+          "version_relation",
+          "condition_relation",
+          "fact_conflict",
+          "missing_context"
+        ]
+      },
+      "status": {
+        "type": "enum",
+        "nullable": false,
+        "values": [
+          "waiting",
+          "accepted",
+          "parallel",
+          "deferred",
+          "frozen"
+        ]
+      },
+      "source_location_ids": {
+        "type": "array<id>",
+        "nullable": false
+      },
+      "created_at": {
+        "type": "datetime_utc",
+        "nullable": false
+      },
+      "updated_at": {
+        "type": "datetime_utc",
+        "nullable": false
+      },
+      "decided_by": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "decided_at": {
+        "type": "datetime_utc",
+        "nullable": true
+      }
+    },
+    "AgentRuleVersion": {
+      "organization_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Organization"
+      },
+      "project_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Project"
+      },
+      "id": {
+        "type": "id",
+        "nullable": false
+      },
+      "rule_id": {
+        "type": "id",
+        "nullable": false
+      },
+      "package_id": {
+        "type": "id",
+        "nullable": false
+      },
+      "source_agent_id": {
+        "type": "id",
+        "nullable": false,
+        "immutable": true
+      },
+      "source_version": {
+        "type": "string",
+        "nullable": false,
+        "immutable": true
+      },
+      "owner_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "knowledge_type_ids": {
+        "type": "array<id>",
+        "nullable": false,
+        "immutable": true
+      },
+      "directory_scope_ids": {
+        "type": "array<id>",
+        "nullable": false,
+        "immutable": true
+      },
+      "received_at": {
+        "type": "datetime_utc",
+        "nullable": false,
+        "immutable": true
+      },
+      "created_at": {
+        "type": "datetime_utc",
+        "nullable": true,
+        "immutable": true
+      },
+      "source_verified_at": {
+        "type": "datetime_utc",
+        "nullable": true
+      },
+      "enabled_by": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "enabled_at": {
+        "type": "datetime_utc",
+        "nullable": true
+      },
+      "disabled_at": {
+        "type": "datetime_utc",
+        "nullable": true
+      },
+      "validation_report_id": {
+        "type": "id",
+        "nullable": true
+      },
+      "status": {
+        "type": "enum",
+        "nullable": false,
+        "values": [
+          "pending",
+          "active",
+          "disabled",
+          "superseded"
+        ]
+      },
+      "definition": {
+        "type": "object",
+        "nullable": false,
+        "immutable": true
+      }
+    },
+    "PublicationEntry": {
+      "organization_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Organization"
+      },
+      "project_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Project"
+      },
+      "batch_id": {
+        "type": "id",
+        "nullable": false
+      },
+      "publication_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "GeneralKnowledgePublication"
+      },
+      "knowledge_item_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "GeneralKnowledgeItem"
+      },
+      "knowledge_version_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "GeneralKnowledgeVersion"
+      },
+      "owner_id_snapshot": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal",
+        "immutable": true
+      },
+      "knowledge_type_id_snapshot": {
+        "type": "id",
+        "nullable": true,
+        "reference": "KnowledgeType",
+        "immutable": true
+      },
+      "confirmed_by": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Principal",
+        "immutable": true
+      },
+      "confirmed_at": {
+        "type": "datetime_utc",
+        "nullable": false,
+        "immutable": true
+      },
+      "published_by": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Principal",
+        "immutable": true
+      },
+      "published_at": {
+        "type": "datetime_utc",
+        "nullable": false,
+        "immutable": true
+      },
+      "withdrawn_at": {
+        "type": "datetime_utc",
+        "nullable": true
+      },
+      "withdrawn_by": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "effective_status": {
+        "type": "derived_enum",
+        "nullable": false,
+        "values": [
+          "effective",
+          "future",
+          "expired",
+          "restricted",
+          "superseded",
+          "withdrawn"
+        ]
+      }
+    },
+    "ResponsibilityEvent": {
+      "organization_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Organization"
+      },
+      "project_id": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Project"
+      },
+      "id": {
+        "type": "id",
+        "nullable": false
+      },
+      "resource_type": {
+        "type": "string",
+        "nullable": false
+      },
+      "resource_id": {
+        "type": "id",
+        "nullable": false
+      },
+      "from_owner_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "to_owner_id": {
+        "type": "id",
+        "nullable": true,
+        "reference": "Principal"
+      },
+      "changed_by": {
+        "type": "id",
+        "nullable": false,
+        "reference": "Principal"
+      },
+      "changed_at": {
+        "type": "datetime_utc",
+        "nullable": false
+      },
+      "reason": {
+        "type": "string",
+        "nullable": false
+      }
+    }
+  },
+  "page_contracts": {
+    "catalog_raw": {
+      "owner_field": "CatalogAsset.owner_id",
+      "type_field": "CatalogAsset.knowledge_type_id",
+      "default_time_field": "AssetLocation.imported_at",
+      "time_fields": [
+        "imported_at",
+        "source_modified_at",
+        "metadata_updated_at"
+      ],
+      "row_kind": [
+        "folder",
+        "file"
+      ]
+    },
+    "catalog_formal": {
+      "owner_field": "KnowledgeVersionMetadata.owner_id",
+      "type_field": "KnowledgeVersionMetadata.knowledge_type_id",
+      "default_time_field": "PublicationEntry.published_at",
+      "time_fields": [
+        "published_at",
+        "version_created_at",
+        "valid_from",
+        "valid_to"
+      ],
+      "mode": "effective"
+    },
+    "tasks": {
+      "owner_field": "TaskMetadata.assignee_id",
+      "type_field": "TaskMetadata.knowledge_type_ids",
+      "type_match": "contains_any",
+      "default_time_field": "created_at",
+      "time_fields": [
+        "created_at",
+        "updated_at",
+        "started_at",
+        "completed_at",
+        "due_at"
+      ]
+    },
+    "agent_rules": {
+      "owner_field": "AgentRuleVersion.owner_id",
+      "type_field": "AgentRuleVersion.knowledge_type_ids",
+      "type_match": "contains_any",
+      "default_time_field": "received_at",
+      "time_fields": [
+        "received_at",
+        "created_at",
+        "enabled_at"
+      ],
+      "source_field": "source_agent_id"
+    },
+    "versions": {
+      "owner_field": "KnowledgeVersionMetadata.owner_id",
+      "history_owner_label": "当时负责人",
+      "type_field": "KnowledgeVersionMetadata.knowledge_type_id",
+      "default_time_by_mode": {
+        "effective": "published_at",
+        "history": "published_at",
+        "drafts": "version_created_at"
+      },
+      "time_fields": [
+        "published_at",
+        "version_created_at",
+        "metadata_updated_at"
+      ],
+      "modes": [
+        "effective",
+        "history",
+        "drafts"
+      ]
+    }
+  },
+  "query_semantics": {
+    "conditions": "AND across fields; OR within one multi-value field",
+    "empty": "no constraint",
+    "unassigned_owner": "explicit owner_is_unassigned=true",
+    "unclassified_type": "explicit classification_status=unclassified",
+    "date_range": "inclusive local dates converted to [from 00:00, day_after_to 00:00) UTC",
+    "missing_time": "excluded only if a time range is specified",
+    "ordering": "selected time plus stable row id; missing times last",
+    "pagination": "server-side cursor for actual implementation; prototype local page numbers",
+    "tab_and_filter": "AND; scope and permissions checked before counts",
+    "directory_scope": "subtree for search; direct children for browse",
+    "historical_metadata": "immutable snapshot, never replaced by current asset labels",
+    "format_vs_type": "file_format is a physical format; knowledge_type is a business dictionary"
+  },
+  "example_query": {
+    "keyword": "LB",
+    "owner_id": "p-zhang",
+    "knowledge_type_ids": [
+      "product_manual"
+    ],
+    "time_field": "imported_at",
+    "date_from": "2026-10-12",
+    "date_to": "2026-10-12",
+    "timezone": "Asia/Shanghai",
+    "include_descendants": true,
+    "sort": "time_desc",
+    "limit": 10,
+    "cursor": null
+  },
+  "example_row": {
+    "entry_kind": "file",
+    "id": "lb-new",
+    "title": "LB 950-40 Bp 产品说明 · 修订版.pdf",
+    "path": "产品资料/2026/LB 950-40 Bp 产品说明 · 修订版.pdf",
+    "owner": {
+      "id": "p-zhang",
+      "display_name": "张敏"
+    },
+    "created_by": {
+      "id": "p-wang",
+      "display_name": "王宁"
+    },
+    "knowledge_type": {
+      "id": "product_manual",
+      "name": "产品说明"
+    },
+    "file_format": "pdf",
+    "source_kind": "local_upload",
+    "imported_at": "2026-10-12T01:30:00Z",
+    "metadata_updated_at": "2026-10-12T01:30:00Z",
+    "parse_status": "complete",
+    "available_actions": [
+      "read_source",
+      "start_task"
+    ]
+  }
+}

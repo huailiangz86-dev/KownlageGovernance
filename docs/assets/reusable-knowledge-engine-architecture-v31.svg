@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1315" viewBox="0 0 1000 1315">
+<title>可复用知识体系与统一知识引擎整体架构</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="42" y="24" font-family="Microsoft YaHei, sans-serif" font-size="35" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">可复用知识体系与统一知识引擎</text>
+<text x="42" y="78" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">共用知识资产，通过统一服务支持多种Agent与业务应用</text>
+<rect x="42" y="123" width="916" height="160" rx="8" fill="#eaf1ff"/>
+<text x="60" y="137" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">上层应用  多种Agent与业务系统</text>
+<rect x="60" y="181" width="280" height="37" rx="8" fill="#ffffff"/>
+<text x="71" y="187" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">员工服务 Agent</text>
+<rect x="358" y="181" width="280" height="37" rx="8" fill="#ffffff"/>
+<text x="369" y="187" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">客户支持 Agent</text>
+<rect x="656" y="181" width="280" height="37" rx="8" fill="#ffffff"/>
+<text x="667" y="187" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">研究分析 Agent</text>
+<rect x="60" y="228" width="280" height="37" rx="8" fill="#ffffff"/>
+<text x="71" y="234" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">流程协作 Agent</text>
+<rect x="358" y="228" width="280" height="37" rx="8" fill="#ffffff"/>
+<text x="369" y="234" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">GEO等内容应用</text>
+<rect x="656" y="228" width="280" height="37" rx="8" fill="#ffffff"/>
+<text x="667" y="234" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">企业业务系统</text>
+<rect x="42" y="318" width="916" height="140" rx="8" fill="#eaf6f4"/>
+<text x="60" y="332" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#237b70" dominant-baseline="text-before-edge">统一知识服务出口</text>
+<text x="60" y="382" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">按对象发现与读取</text>
+<text x="358" y="382" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">按关系与条件展开</text>
+<text x="656" y="382" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">取证据与任务上下文</text>
+<text x="60" y="416" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">可选有依据问答</text>
+<text x="358" y="416" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">版本复验与变更同步</text>
+<text x="656" y="416" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">按应用身份与用途服务</text>
+<rect x="42" y="493" width="916" height="290" rx="8" fill="#f0edfc"/>
+<text x="60" y="508" font-family="Microsoft YaHei, sans-serif" font-size="32" font-weight="700" fill="#6c53a0" dominant-baseline="text-before-edge">可复用知识体系</text>
+<text x="60" y="554" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">维护一次，按各应用的授权和任务提供不同知识视图</text>
+<rect x="60" y="593" width="280" height="73" rx="8" fill="#ffffff"/>
+<text x="70" y="602" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">领域与概念</text>
+<text x="70" y="638" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">主题定义、统一术语与别名</text>
+<rect x="358" y="593" width="280" height="73" rx="8" fill="#ffffff"/>
+<text x="368" y="602" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">知识对象</text>
+<text x="368" y="638" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">稳定身份、类型和标准属性</text>
+<rect x="656" y="593" width="280" height="73" rx="8" fill="#ffffff"/>
+<text x="666" y="602" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">关系与依赖</text>
+<text x="666" y="638" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">前置、组成、例外与替代</text>
+<rect x="60" y="678" width="280" height="73" rx="8" fill="#ffffff"/>
+<text x="70" y="687" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">条件与规则</text>
+<text x="70" y="723" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">适用对象、时间、情形</text>
+<rect x="358" y="678" width="280" height="73" rx="8" fill="#ffffff"/>
+<text x="368" y="687" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">证据与版本</text>
+<text x="368" y="723" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">原文依据、批准与有效性</text>
+<rect x="656" y="678" width="280" height="73" rx="8" fill="#ffffff"/>
+<text x="666" y="687" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">责任与使用边界</text>
+<text x="666" y="723" font-family="Microsoft YaHei, sans-serif" font-size="18" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">维护、审核、受众与用途</text>
+<rect x="42" y="818" width="916" height="125" rx="8" fill="#fff3e7"/>
+<text x="60" y="832" font-family="Microsoft YaHei, sans-serif" font-size="28" font-weight="700" fill="#9d6328" dominant-baseline="text-before-edge">资料接入与知识加工</text>
+<text x="60" y="878" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">连接资料 → 解析理解 → 清洗核对 → 建立对象关系 → 审核发布</text>
+<text x="60" y="910" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">新内容进入同一体系，原件、候选、正式知识分开管理。</text>
+<rect x="42" y="978" width="916" height="95" rx="8" fill="#f1f4f7"/>
+<text x="60" y="991" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">企业资料与数据来源</text>
+<text x="60" y="1035" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">文档 · 表格 · 图片 · 音频 · 视频 · 内容系统 · 业务数据</text>
+<rect x="42" y="1108" width="916" height="93" rx="8" fill="#edf5fb"/>
+<text x="60" y="1121" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">引擎与运行底座  支撑各层</text>
+<text x="60" y="1164" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">解析 · 分段 · 向量 · 检索 · 模型 · 存储 · 作业调度</text>
+<path d="M500,314 L500,287 M495,295 L500,287 L505,295" fill="none" stroke="#8798af" stroke-width="3"/>
+<path d="M500,489 L500,462 M495,470 L500,462 L505,470" fill="none" stroke="#8798af" stroke-width="3"/>
+<path d="M500,814 L500,787 M495,795 L500,787 L505,795" fill="none" stroke="#8798af" stroke-width="3"/>
+<path d="M500,974 L500,947 M495,955 L500,947 L505,955" fill="none" stroke="#8798af" stroke-width="3"/>
+<rect x="42" y="1230" width="916" height="52" rx="8" fill="#253650"/>
+<text x="60" y="1245" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="700" fill="white" dominant-baseline="text-before-edge">贯穿各层  权限安全 · 质量发布 · 版本责任 · 审计运营</text>
+<text x="42" y="1291" font-family="Microsoft YaHei, sans-serif" font-size="19" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">目标架构  共用知识不等于全部共享，每个应用仍按身份与用途使用。</text>
+</svg>

@@ -1,0 +1,41 @@
+flowchart LR
+subgraph client ["上层产品与业务应用"]
+workspace["知识库工作台：浏览、搜索、问答、治理"]
+businessApps["GEO、企业 Agent 与业务系统"]
+end
+subgraph gateway ["统一接入"]
+apiGateway["API 网关与调用方凭证"]
+end
+subgraph service ["平台服务与独立作业"]
+platformApi["知识管理 API：目录、版本、审核、发布、授权"]
+retrievalApi["知识引擎 API：检索、证据、问答编排"]
+backgroundWorker["后台 Worker：接入、解析、索引与变更同步"]
+end
+subgraph datastore ["平台持有的事实与文件"]
+mysqlDb["MySQL：业务事实、证据关系、审计、Outbox"]
+objectStore["对象存储：原件、转写、关键帧与派生文件"]
+end
+subgraph async ["异步调度基础设施"]
+taskQueue["持久化任务派发队列"]
+end
+subgraph external ["可替换的底层能力"]
+parseModels["阿里云或火山：文档、语音、视频与模型 API"]
+searchEngine["检索后端：百炼、VikingDB 或自管 RAGFlow"]
+sharedIdentity["既有共享身份与权限系统"]
+end
+workspace -->|"浏览与管理"| apiGateway
+businessApps -->|"知识调用"| apiGateway
+apiGateway -->|"资源与生命周期"| platformApi
+apiGateway -->|"检索与问答"| retrievalApi
+retrievalApi -->|"权限与版本复核"| platformApi
+platformApi -->|"读写事实与事件"| mysqlDb
+platformApi -->|"原件与证据访问"| objectStore
+platformApi -.->|"提交后台任务"| taskQueue
+taskQueue -.->|"派发可恢复作业"| backgroundWorker
+backgroundWorker -->|"检查点与投影回执"| mysqlDb
+backgroundWorker -->|"读取原件与写产物"| objectStore
+backgroundWorker -.->|"解析与模型调用"| parseModels
+backgroundWorker -.->|"构建与清理索引"| searchEngine
+retrievalApi -.->|"召回候选"| searchEngine
+retrievalApi -.->|"重排与回答"| parseModels
+platformApi -.->|"复用身份与有效权限"| sharedIdentity

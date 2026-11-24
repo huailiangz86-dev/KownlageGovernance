@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1280" viewBox="0 0 1500 1280">
+<title>知识库引擎构建与查询流水线</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="60" y="30" font-family="Microsoft YaHei, sans-serif" font-size="40" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">知识库引擎核心流水线</text>
+<text x="60" y="90" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">目标设计  |  构建可追溯的索引，返回经过授权的证据</text>
+<text x="80" y="154" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" fill="#237b70" dominant-baseline="text-before-edge">构建与更新链路</text>
+<text x="810" y="154" font-family="Microsoft YaHei, sans-serif" font-size="30" font-weight="700" fill="#3568c0" dominant-baseline="text-before-edge">检索与问答链路</text>
+<rect x="60" y="210" width="650" height="110" rx="10" fill="#eaf6f4"/>
+<text x="80" y="227" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">1  来源与版本</text>
+<text x="80" y="276" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">授权接入 · 摘要校验 · 不可变原件</text>
+<path d="M385,325 L385,346 M379,337 L385,346 L391,337" fill="none" stroke="#8a9bb0" stroke-width="3"/>
+<rect x="60" y="351" width="650" height="110" rx="10" fill="#eaf6f4"/>
+<text x="80" y="368" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">2  解析与标准内容块</text>
+<text x="80" y="417" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">文档 / 表格 / 图像 / 音视频</text>
+<path d="M385,466 L385,487 M379,478 L385,487 L391,478" fill="none" stroke="#8a9bb0" stroke-width="3"/>
+<rect x="60" y="492" width="650" height="110" rx="10" fill="#eaf6f4"/>
+<text x="80" y="509" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">3  结构父子切片</text>
+<text x="80" y="558" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">标题与条件 · token 上限 · 稳定证据</text>
+<path d="M385,607 L385,628 M379,619 L385,628 L391,619" fill="none" stroke="#8a9bb0" stroke-width="3"/>
+<rect x="60" y="633" width="650" height="110" rx="10" fill="#eaf6f4"/>
+<text x="80" y="650" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">4  Embedding 与关键词</text>
+<text x="80" y="699" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">模型版本 · 维度 · 分词与精确字段</text>
+<path d="M385,748 L385,769 M379,760 L385,769 L391,760" fill="none" stroke="#8a9bb0" stroke-width="3"/>
+<rect x="60" y="774" width="650" height="110" rx="10" fill="#eaf6f4"/>
+<text x="80" y="791" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">5  索引投影与代次</text>
+<text x="80" y="840" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">BM25 / dense / 视觉通道</text>
+<path d="M385,889 L385,910 M379,901 L385,910 L391,901" fill="none" stroke="#8a9bb0" stroke-width="3"/>
+<rect x="60" y="915" width="650" height="110" rx="10" fill="#eaf6f4"/>
+<text x="80" y="932" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">6  发布与更新同步</text>
+<text x="80" y="981" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">事实事务 · Outbox · 水位与失效</text>
+<rect x="790" y="210" width="650" height="110" rx="10" fill="#eaf1ff"/>
+<text x="810" y="227" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">1  问题与有效范围</text>
+<text x="810" y="276" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">身份 · 知识库 · 目录 · 用途与条件</text>
+<path d="M1115,325 L1115,346 M1109,337 L1115,346 L1121,337" fill="none" stroke="#8a9bb0" stroke-width="3"/>
+<rect x="790" y="351" width="650" height="110" rx="10" fill="#eaf1ff"/>
+<text x="810" y="368" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">2  混合候选召回</text>
+<text x="810" y="417" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">关键词 + 向量 · 融合排名 · 去重</text>
+<path d="M1115,466 L1115,487 M1109,478 L1115,487 L1121,478" fill="none" stroke="#8a9bb0" stroke-width="3"/>
+<rect x="790" y="492" width="650" height="110" rx="10" fill="#eaf1ff"/>
+<text x="810" y="509" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">3  权威版本与权限复核</text>
+<text x="810" y="558" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">过滤未发布 / 撤回 / 来源受限</text>
+<path d="M1115,607 L1115,628 M1109,619 L1115,628 L1121,619" fill="none" stroke="#8a9bb0" stroke-width="3"/>
+<rect x="790" y="633" width="650" height="110" rx="10" fill="#eaf1ff"/>
+<text x="810" y="650" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">4  重排与上下文</text>
+<text x="810" y="699" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">Rerank · 父子展开 · token 预算</text>
+<path d="M1115,748 L1115,769 M1109,760 L1115,769 L1121,760" fill="none" stroke="#8a9bb0" stroke-width="3"/>
+<rect x="790" y="774" width="650" height="110" rx="10" fill="#eaf1ff"/>
+<text x="810" y="791" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">5  证据服务与回答</text>
+<text x="810" y="840" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">GEO 可取证据 · 问答可生成内容</text>
+<path d="M1115,889 L1115,910 M1109,901 L1115,910 L1121,901" fill="none" stroke="#8a9bb0" stroke-width="3"/>
+<rect x="790" y="915" width="650" height="110" rx="10" fill="#eaf1ff"/>
+<text x="810" y="932" font-family="Microsoft YaHei, sans-serif" font-size="29" font-weight="700" fill="#23354c" dominant-baseline="text-before-edge">6  引用核对与使用反馈</text>
+<text x="810" y="981" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">精确版本 · 回看依据 · 评估回归</text>
+<rect x="60" y="1105" width="1380" height="99" rx="10" fill="#253650"/>
+<text x="85" y="1125" font-family="Microsoft YaHei, sans-serif" font-size="25" font-weight="700" fill="white" dominant-baseline="text-before-edge">共同合同：稳定证据 ID · 配置冻结 · 租户隔离 · 当前状态复核 · 可恢复作业</text>
+<text x="60" y="1230" font-family="Microsoft YaHei, sans-serif" font-size="24" font-weight="400" fill="#23354c" dominant-baseline="text-before-edge">切片与索引可重建；业务事实、原始依据和已发布引用保持可追溯。</text>
+</svg>

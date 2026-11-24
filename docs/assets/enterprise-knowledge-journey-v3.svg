@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1160" viewBox="0 0 1000 1160">
+<title>企业知识库建设与使用流程</title>
+<rect width="100%" height="100%" fill="white"/>
+<text x="45" y="27" font-family="Microsoft YaHei, sans-serif" font-size="35" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">企业知识库建设与使用流程</text>
+<text x="45" y="82" font-family="Microsoft YaHei, sans-serif" font-size="22" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">产品目标  从企业资料到可靠使用，再回到持续维护</text>
+<rect x="45" y="128" width="910" height="110" rx="8" fill="#eaf6f4"/>
+<text x="64" y="140" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">1  建库与分工</text>
+<text x="64" y="178" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">知识负责人和管理员确认用途、受众、责任与默认安全范围</text>
+<text x="64" y="208" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#526278" dominant-baseline="text-before-edge">结果  有人负责且范围明确的知识空间</text>
+<line x1="500" y1="241" x2="500" y2="251" stroke="#8e9cb0" stroke-width="3"/>
+<polygon points="500,251 495,243 505,243" fill="#8e9cb0"/>
+<rect x="45" y="254" width="910" height="110" rx="8" fill="#eaf6f4"/>
+<text x="64" y="266" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">2  目录主题与标签</text>
+<text x="64" y="304" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">维护人建立初始资料目录、用户主题和业务标签字典</text>
+<text x="64" y="334" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#526278" dominant-baseline="text-before-edge">结果  资料有归属，知识有阅读路径和查找方式</text>
+<line x1="500" y1="367" x2="500" y2="377" stroke="#8e9cb0" stroke-width="3"/>
+<polygon points="500,377 495,369 505,369" fill="#8e9cb0"/>
+<rect x="45" y="380" width="910" height="110" rx="8" fill="#eaf6f4"/>
+<text x="64" y="392" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">3  资料接入与准备</text>
+<text x="64" y="430" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">贡献者选范围接入，核对来源权限、重复、失败和覆盖</text>
+<text x="64" y="460" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#526278" dominant-baseline="text-before-edge">结果  原件与版本清单，限制和待补内容明确保留</text>
+<line x1="500" y1="493" x2="500" y2="503" stroke="#8e9cb0" stroke-width="3"/>
+<polygon points="500,503 495,495 505,495" fill="#8e9cb0"/>
+<rect x="45" y="506" width="910" height="110" rx="8" fill="#eaf6f4"/>
+<text x="64" y="518" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">4  清洗与问题决定</text>
+<text x="64" y="556" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">整理人核对原文，处理差异、修订、并存与暂缓</text>
+<text x="64" y="586" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#526278" dominant-baseline="text-before-edge">结果  有证据的候选知识和可追踪的问题处置</text>
+<line x1="500" y1="619" x2="500" y2="629" stroke="#8e9cb0" stroke-width="3"/>
+<polygon points="500,629 495,621 505,621" fill="#8e9cb0"/>
+<rect x="45" y="632" width="910" height="110" rx="8" fill="#eaf6f4"/>
+<text x="64" y="644" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">5  审核发布</text>
+<text x="64" y="682" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">审核人与发布人确认固定内容、条件、受众及外发用途</text>
+<text x="64" y="712" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#526278" dominant-baseline="text-before-edge">结果  当前可用的正式知识，未通过范围继续待办</text>
+<line x1="500" y1="745" x2="500" y2="755" stroke="#8e9cb0" stroke-width="3"/>
+<polygon points="500,755 495,747 505,747" fill="#8e9cb0"/>
+<rect x="45" y="758" width="910" height="110" rx="8" fill="#eaf1ff"/>
+<text x="64" y="770" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">6  员工搜索与问答</text>
+<text x="64" y="808" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">员工按本人权限浏览、筛选、提问、回看依据和反馈</text>
+<text x="64" y="838" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#526278" dominant-baseline="text-before-edge">结果  可解释的答案和知识缺口，原件另查权限</text>
+<line x1="500" y1="871" x2="500" y2="881" stroke="#8e9cb0" stroke-width="3"/>
+<polygon points="500,881 495,873 505,873" fill="#8e9cb0"/>
+<rect x="45" y="884" width="910" height="110" rx="8" fill="#eaf1ff"/>
+<text x="64" y="896" font-family="Microsoft YaHei, sans-serif" font-size="27" font-weight="700" fill="#253650" dominant-baseline="text-before-edge">7  应用开放与运营</text>
+<text x="64" y="934" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">应用负责人试读后接入，维护人处理更新、复核和撤回</text>
+<text x="64" y="964" font-family="Microsoft YaHei, sans-serif" font-size="21" font-weight="400" fill="#526278" dominant-baseline="text-before-edge">结果  有期限的知识供给，变更可追踪并可停止</text>
+<rect x="45" y="1034" width="910" height="70" rx="8" fill="#253650"/>
+<text x="64" y="1053" font-family="Microsoft YaHei, sans-serif" font-size="23" font-weight="700" fill="white" dominant-baseline="text-before-edge">每一步都检查权限、内容状态与使用目的；反馈和变化回到维护。</text>
+<text x="45" y="1122" font-family="Microsoft YaHei, sans-serif" font-size="20" font-weight="400" fill="#253650" dominant-baseline="text-before-edge">说明  为产品目标流程，案例和新增机制需分别实现与验收。</text>
+</svg>

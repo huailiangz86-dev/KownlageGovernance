@@ -1,0 +1,40 @@
+{
+  "chapters": 31,
+  "source_characters": 16254,
+  "tables": 5,
+  "figures": 2,
+  "pages": 23,
+  "rendered_pages": 23,
+  "missing_local_links": [],
+  "page_text_lengths": [
+    473,
+    851,
+    747,
+    205,
+    864,
+    869,
+    793,
+    803,
+    864,
+    706,
+    863,
+    893,
+    759,
+    533,
+    318,
+    878,
+    838,
+    921,
+    907,
+    849,
+    648,
+    690,
+    441
+  ],
+  "visual_review": "passed_all_23_page_layouts_and_full_resolution_permissions_case_security_references",
+  "example_arithmetic": "20 positions, 18 unique sources, 14+2+2 parsing, 16+3+1 candidate dispositions, 14/16/2 scoped reads",
+  "deliverable_sha256": {
+    "企业知识库建设与运营产品方案-v3.0.docx": "881030217cf12d48fb22f7c884b1816d2687601750812859dd9ac8374ce94cb1",
+    "企业知识库建设与运营产品方案-v3.0.pdf": "a410c1cbf5ca79f0d1a3d215f3780f3788ce06427442a038d99d8178f614ac45"
+  }
+}
